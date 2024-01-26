@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: border-box;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .md {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.205);
+        }
+
+        .cont {
+            height: 600px;
+            width: 800px ;
+            position: absolute;
+            background-color: rgb(140, 241, 241);
+            border-radius: 40px;
+            top: 30px;
+            left: 400px;
+        }
+        .content{
+            height: 150px;
+            width: 300px;   
+            position: absolute;
+            top: 150px;
+            left: 400px;
+            font-size: 30px;
+            text-align: center;
+            background-image: linear-gradient(rgb(196, 20, 20), white,rgb(196, 20, 20));
+            border-radius: 50px;
+        }
+        .content p{
+            padding: 35px;
+        }
+        .inputs{
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+        .box{
+            display: inline;
+            padding: 8px;
+            font-size: 18px;
+            line-height: 40px;
+            border-radius: 20px;
+            background-color: gray;
+        }
+        .box:hover{
+            background-color: black;
+            color: white;
+        }
+        #c1:checked~.content{
+            transform: none;
+        }
+        #c2:checked~.content{
+            transform: rotate(10deg);
+            transition: 1.3s;
+        }
+        #c3:checked~.content{
+            transform: rotate(45deg);
+            transition: 1.3s;
+
+        }
+        #c4:checked~.content{
+            transform: rotateX(45deg);
+            transition: 1.3s;
+
+        }
+        #c5:checked~.content{
+            transition: 1.3s;
+            transform: rotateX(100deg);
+        }
+        #c6:checked~.content{
+            transition: 1.3s;
+            transform: rotateY(45deg);
+        }
+        #c7:checked~.content{
+            transition: 1.3s;
+            transform: rotateY(80deg);
+        }
+        #c8:checked~.content{
+            transition: 1.3s;
+            transform: skew(20deg,20deg);
+        }
+        #c9:checked~.content{
+            transition: 1.3s;
+            transform: skew(30deg,30deg);
+        }
+        #c10:checked~.content{
+            transition: 1.3s;
+            transform: skewX(30deg);
+        }
+        #c11:checked~.content{
+            transition: 1.3s;
+            transform: skewY(30deg);
+        }
+        #c12:checked~.content{
+            transition: 1.3s;
+            transform: translate(20px,10px);
+        }
+        #c13:checked~.content{
+            transition: 1.3s;
+            transform: scale(2,3);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="md">
+        <div class="cont">
+            <div class="inputs">
+            
+                <input type="radio" name="transforms" id="c1">
+                <div class="box"><label for="c1">transform: none;</div><br>
+
+                <input type="radio" name="transforms" id="c2">
+                <div class="box"  class="box"><label for="c2">transform: rotate(10deg);</div><br>
+
+                <input type="radio" name="transforms" id="c3">
+                <div class="box"><label for="c3">transform: rotate(45deg);</div><br>
+
+                <input type="radio" name="transforms" id="c4">
+                <div class="box"><label for="c4">transform: rotateX(45deg);</div><br>
+
+                <input type="radio" name="transforms" id="c5">
+                <div class="box"><label for="c5">transform: rotateX(100deg);</div><br>
+
+                <input type="radio" name="transforms" id="c6">
+                <div class="box"><label for="c6">transform: rotateY(45deg);</div><br>
+
+                <input type="radio" name="transforms" id="c7">
+                <div class="box"><label for="c7">transform: rotateY(80deg);</div><br>
+
+                <input type="radio" name="transforms" id="c8">
+                <div class="box"><label for="c8">transform: skew(20deg,20deg);</div><br>
+
+                <input type="radio" name="transforms" id="c9">
+                <div class="box"><label for="c9">transform: skew(30deg,30deg);</div><br>
+
+                <input type="radio" name="transforms" id="c10";>
+                <div class="box"><label for="c10">transform: skewX(30deg);</div><br>
+
+                <input type="radio" name="transforms" id="c11">
+                <div class="box"><label for="c11">transform: skewY(30deg);</div><br>
+
+                <input type="radio" name="transforms" id="c12">
+                <div class="box"><label for="c12">transform: translate(20px,10px);</div><br>
+
+                <input type="radio" name="transforms" id="c13">
+                <div class="box"><label for="c13">transform: scale(2,3);</div><br>
+
+                <div class="content"><p>Different types of transforms.</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
